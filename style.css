@@ -1,0 +1,1042 @@
+/*
+THEME NAME: DWI BASE THEME
+DESCRIPTION: Custom Theme Designed for [CLIENT NAME]
+VERSION: 2.3.1
+AUTHOR: Digital Web Ink
+AUTHOR URI: http://digitalwebink.com/
+.
+*/
+/* BEGIN: CSS RESET RULES */
+html,
+nav,
+a,
+abbr,
+acronym,
+address,
+area,
+b,
+bdo,
+big,
+button,
+caption,
+cite,
+code,
+col,
+colgroup,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+i,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+map,
+object,
+ol,
+p,
+param,
+pre,
+q,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+p {
+    padding: 0 0 15px;
+}
+
+table {
+    padding: 0 0 15px;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+hr {
+    background: none;
+    height: 0;
+    width: 0;
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+
+code,
+pre {
+    white-space: pre;
+}
+
+del {
+    text-decoration: line-through;
+    /* it's deleted text - show it as such */
+}
+
+dfn {
+    font-style: italic;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+fieldset {
+    border: 0;
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+h6 {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    border: 0;
+    vertical-align: bottom;
+}
+
+ins {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+tt {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.portfolio ul {
+    list-style-type: none;
+}
+
+.portfolio-masonry li img {
+    width: 190px;
+    height: auto;
+    color: transparent;
+}
+
+.masonry li {
+    display: inline-block;
+}
+
+.masonry img {
+    color: transparent;
+}
+
+#lbwrap #lightbox a.close {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border-radius: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 28px;
+    font-weight: normal;
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+/*
+Comment out / remove the line below if you are NOT going to use Font Awesome, so the "X" character shows
+*/
+#lbwrap #lightbox a.close span {
+    display: none;
+}
+
+.skip {
+    position: absolute;
+    left: -999em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/* END: CSS RESET RULES */
+/************** BEGIN Theme CORE styles *********/
+.page-numbers {
+    display: inline-block;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+a.page-numbers {
+    padding: 0 5px;
+    margin-right: 5px;
+    background: #DBAF47;
+    color: #fff;
+}
+
+span.page-numbers.current {
+    background: #fff;
+    color: #DBAF47;
+}
+
+div.social_media {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.social_media .fb_iframe_widget {
+    display: inline-block;
+}
+
+div.social_media > * {
+    margin-bottom: 10px !important;
+    vertical-align: top !important;
+}
+
+.fb_iframe_widget span {
+    vertical-align: top !important;
+}
+
+div.social_media a img {
+    width: auto;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+div.social_media a[data-pin-log="button_pinit"] {
+    margin-right: 30px !important;
+}
+
+div.social_media div.fb-like {
+    vertical-align: top;
+    width: 105px;
+}
+
+div.social_media div.fb-share-button {
+    vertical-align: top;
+    width: 105px;
+    margin-right: 10px;
+}
+
+div.social_media .twitter-share-button {
+    display: inline-block;
+    vertical-align: top;
+    width: 105px;
+    height: 20px;
+    margin-right: 10px;
+    color: transparent;
+}
+
+/** Styles for custom (non-Font Awesome) social media buttons **/
+.social_media.custom {
+    height: 63px;
+    text-align: center;
+}
+
+.social_media .custom {
+    position: relative;
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+    margin: 0 2px;
+}
+
+.social_media .custom-fb {
+    background-position: -69px 0;
+}
+
+.social_media .custom-twitter {
+    background-position: -137px 0;
+}
+
+.social_media .custom-pinterest {
+    background-position: -205px 0;
+}
+
+.social_media a span.count {
+    position: absolute;
+    display: inline-block;
+    right: 5px;
+    top: 1px;
+    background: red;
+    border: 1px solid red;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    min-width: 9px;
+    height: 16px;
+    line-height: 17px;
+    padding: 0 3px 0 4px;
+}
+
+/** Styles for Font Awesome social media buttons **/
+.social_media .fa {
+    position: relative;
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+    line-height: 63px;
+    margin: 0 2px;
+    color: #888;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+/************** END Theme CORE styles *********/
+/************** BEGIN WordPress CORE Styles *****/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+article ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0 0 15px;
+    margin-left: 15px;
+}
+
+article ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 0 0 15px;
+    margin-left: 15px;
+}
+
+article ul ul,
+article ol ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+article ol ol,
+article ul ol {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+article ul li {
+    padding: 0 0 0 5px;
+    list-style: outside none;
+    /*text-indent: 2em;*/
+}
+
+article ol li {
+    padding: 0 0 0 15px;
+    list-style-position: outside;
+    /*text-indent: 2em;*/
+}
+
+/********** END: WordPress core styles *********/
+/******************* BEGIN Theme Styles *******************/
+/********** Begin Global Content Styles **********/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: left;
+    overflow-y: scroll;
+    color: black;
+}
+
+.headerwrapper,
+.navwrapper,
+.contentwrapper,
+.footerwrapper {
+    width: 100%;
+}
+
+header,
+nav,
+section,
+footer {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms;
+}
+
+/* Bullet Styles */
+.contentwrapper article ul {
+    margin-left: 25px;
+    padding: 0 0 15px;
+}
+
+.contentwrapper article ul li {
+    padding: 0 0 0 5px;
+    list-style: disc outside none;
+}
+
+.contentwrapper article ol {
+    margin-left: 25px;
+    padding: 0 0 15px;
+}
+
+.contentwrapper article ol li {
+    padding: 0 0 0 5px;
+    list-style-position: outside;
+}
+
+/* Button Styles */
+span.button {
+    border: 1px solid #656565;
+    margin: 0 5px;
+    padding: 2px 10px 7px;
+    -webkit-background-size: 200% 100%;
+    -moz-background-size: 200% 100%;
+    background-size: 200% 100%;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjY2NjIiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0icmdiKDAsMCwwKSIgc3RvcC1vcGFjaXR5PSIwIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
+    background-image: -webkit-linear-gradient(left, transparent 50%, #ccc 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, #ccc 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, #ccc 50%);
+    background-image: linear-gradient(to right, transparent 50%, #ccc 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    -o-transition: background-position 1s;
+    transition: background-position 1s;
+}
+
+span.button:hover {
+    background-position: -100% 0;
+}
+
+span.button:hover a {
+    color: #000;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms;
+}
+
+span.button a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms;
+}
+
+span.button a:hover {
+    text-decoration: none;
+}
+
+/* Column Short Code Styles */
+.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.row > p {
+    width: 100%;
+}
+
+.row .col {
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.row .col-1 {
+    margin: 0 auto;
+    display: block;
+}
+
+.row .col-2 {
+    width: 47%;
+}
+
+.row .col-3 {
+    width: 30%;
+}
+
+.row .col-4 {
+    width: 21%;
+}
+
+.row .col-one-third {
+    width: 30%;
+}
+
+.row .col-one-third img {
+    width: 100%;
+}
+
+.row .col-two-thirds {
+    width: 69%;
+}
+
+.row .col-two-thirds img {
+    width: 100%;
+}
+
+/* Horizontal Rule */
+hr {
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    padding: 20px 0 0;
+    margin: 0 0 35px;
+}
+
+/* Gravity Form Inputs / Labels for Safari and Chrome */
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+
+.gform_wrapper .gfield_checkbox li label,
+.gform_wrapper .gfield_radio li label {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/*Gallery Transformations
+/*  Masonry Gallery Tiles Resizing before Re-Columnizing  */
+div.gallery img {
+    max-width: 100%;
+}
+
+ul.slides .item {
+    max-width: 19%;
+}
+
+/*  END: Masonry Gallery Tiles Resizing before Re-Columnizing  */
+/*  Page Load/Re-Load Transistions  */
+.gallery .slides div {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.gallery .slides.playing div {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/********** End Global Content Styles ************/
+
+/********** Begin Headerwrapper Styles ***********/
+
+.headerwrapper {
+
+    height: 100px;
+    background: gray;
+
+}
+
+/********** End Headerwrapper Styles *************/
+
+/********** Begin Navwrapper Styles **************/
+#toggle,
+.toggle {
+    display: none;
+}
+
+nav .menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+nav .menu li {
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu li:hover ul {
+    left: auto;
+}
+
+nav .menu li a {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+nav .menu ul.sub-menu {
+    display: block;
+    position: absolute;
+    left: -999em;
+    top: 30px;
+    width: 250px;
+    height: auto;
+}
+
+nav .menu ul.sub-menu li {
+    display: block;
+    width: auto;
+}
+
+nav .menu ul.sub-menu li ul {
+    display: none;
+}
+
+nav .menu ul.sub-menu li:hover ul {
+    display: block;
+    top: 0;
+    left: 250px;
+    border-left: 1px solid #352b1c;
+}
+
+/********** End Navwrapper Styles ****************/
+
+/********** Begin Footerwrapper Styles ***********/
+
+.footerwrapper {
+
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    background: gray;
+
+}
+
+/********** End Footerwrapper Styles *************/
+
+/********** Begin Home Page Only Styles **********/
+
+.contentwrapper {
+
+    padding: 50px;
+
+}
+
+form {
+
+    height: 300px;
+
+}
+
+form .input {
+    margin-bottom: 20px;
+}
+
+form label {
+
+    display: block;
+    /*width: 100px;*/
+
+}
+
+form .error {
+    color: red;
+}
+
+/********** End Home Page Only Styles ************/
+
+/********** Begin Blog Page Only Styles **********/
+/********** End Blog Page Only Styles ************/
+/******************* End Theme Styles *********************/
+/********** BEGIN Responsive Design styles ******/
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    html,
+    body {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    header,
+    section,
+    footer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 839px) {
+    ul.slides .item {
+        max-width: 24%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .headerwrapper {
+        padding: 0;
+    }
+
+    .headerwrapper header {
+        width: 100%;
+        height: auto;
+    }
+
+    .toggle {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        margin-left: 67%;
+        width: 33%;
+        height: 35px;
+        background: #121E40;
+        border-radius: 3px;
+        text-align: center;
+        color: white;
+        line-height: 35px;
+    }
+
+    .navwrapper nav {
+        margin-top: 0;
+    }
+
+    .navwrapper .menu {
+        position: absolute;
+        display: none;
+        width: 100%;
+        padding-top: 20px;
+        background: #121E40;
+        z-index: 255555;
+        text-align: left;
+    }
+
+    .navwrapper .menu li {
+        display: block;
+    }
+
+    .navwrapper .menu li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #3c4f6e;
+        font-size: 14px;
+    }
+
+    .navwrapper .menu li ul.sub-menu {
+        position: relative;
+        top: 0;
+        left: auto;
+        width: 100%;
+    }
+
+    .navwrapper .menu li ul.sub-menu li a {
+        width: 100%;
+        padding-left: 40px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #3c4f6e;
+    }
+
+    .navwrapper .menu li ul.sub-menu li:hover ul {
+        left: auto;
+    }
+
+    .navwrapper .menu li ul.sub-menu li ul {
+        display: block;
+    }
+
+    .navwrapper #toggle:checked + div .menu {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    ul.slides .item {
+        max-width: 32%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .contentwrapper .row .col {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    ul.slides .item {
+        max-width: 47%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    ul.slides .item {
+        max-width: 100%;
+    }
+}
+
+/********** END: Responsive Design styles ******/
