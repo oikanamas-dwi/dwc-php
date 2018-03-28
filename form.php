@@ -179,7 +179,7 @@ if (isset($_POST['add-customer'])) {
                         </div>
                         <div class="phone_input input">
                             <label for="phone">Phone</label>
-                            <input type="text" name="phone" placeholder="555-5555-5555" value="<?php echo $phone ?>"/>
+                            <input type="text" name="phone" placeholder="555-555-5555" value="<?php echo $phone ?>"/>
                             <span class="error">* <?php echo $phone_err ?></span>
                         </div>
                         <div class="email_input input">
